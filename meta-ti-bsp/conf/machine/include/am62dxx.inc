@@ -13,3 +13,5 @@ IMAGE_BOOT_FILES += "tiboot3-am62dx-hs-evm.bin"
 
 TFA_BOARD = "lite"
 OPTEEMACHINE = "k3-am62x"
+
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "ti-dac-fw"
