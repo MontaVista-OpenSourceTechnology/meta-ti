@@ -11,7 +11,9 @@ LIC_FILES_CHKSUM = "file://docs/license.rst;md5=ffe678546d4337b732cfd12262e6af11
 BRANCH = "powervr/${PV}"
 
 SRC_URI = "git://github.com/TexasInstruments/mesa.git;protocol=https;branch=${BRANCH} \
-           file://0001-meson-misdetects-64bit-atomics-on-mips-clang.patch"
+           file://0001-meson-misdetects-64bit-atomics-on-mips-clang.patch \
+           file://0001-clc-fix-build-with-LLVM13.patch \
+           "
 
 SRCREV = "7b6e8de7b0acdaff684f1109c6acb575644a93ea"
 PV = "25.2.8"
