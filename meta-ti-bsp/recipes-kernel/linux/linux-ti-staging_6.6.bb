@@ -28,6 +28,12 @@ KERNEL_REPRODUCIBILITY_PATCHES = " \
     file://0001-vt-conmakehash-improve-reproducibility.patch \
 "
 
+SRC_URI += "\
+    file://0001-move-common-SSL-helper-functions-to-a-header.patch \
+    file://0002-avoid-using-deprecated-ERR_get_error_line.patch \
+    file://0003-use-pkcs11-provider-for-OPENSSL-MAJOR-3.patch \
+"
+
 # Special configuration for remoteproc/rpmsg IPC modules
 module_conf_rpmsg_client_sample = "blacklist rpmsg_client_sample"
 module_conf_ti_k3_r5_remoteproc = "softdep ti_k3_r5_remoteproc pre: virtio_rpmsg_bus"
