@@ -69,3 +69,9 @@ KERNEL_GIT_URI = "git://github.com/beagleboard/linux.git"
 
 SRC_URI += "file://no-fortify.cfg"
 KERNEL_CONFIG_FRAGMENTS += "${UNPACKDIR}/no-fortify.cfg"
+
+SRC_URI += "\
+    file://0001-move-common-SSL-helper-functions-to-a-header.patch \
+    file://0002-avoid-using-deprecated-ERR_get_error_line.patch \
+    file://0003-use-pkcs11-provider-for-OPENSSL-MAJOR-3.patch \
+"
